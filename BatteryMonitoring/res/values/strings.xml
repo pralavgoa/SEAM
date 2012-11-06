@@ -4,5 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_battery">BatteryActivity</string>
+    <string name="intent_face_detect">com.networks.ucla.battery.FACE_DETECT</string>
 
 </resources>
