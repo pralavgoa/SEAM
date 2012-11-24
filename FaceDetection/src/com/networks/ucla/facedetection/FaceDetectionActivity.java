@@ -18,6 +18,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager.LayoutParams;
 import android.widget.Toast;
 
 public class FaceDetectionActivity extends Activity {
@@ -28,6 +29,7 @@ public class FaceDetectionActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
         /* Broadcast that we started. */
         Intent broadcastIntent = new Intent(); 
         broadcastIntent.setAction("com.networks.ucla.FACEDETECT_START"); 
@@ -139,7 +141,7 @@ public class FaceDetectionActivity extends Activity {
 	    	Toast.makeText(FaceDetectionActivity.this, 
 	    			"completed turn: " + mCount, Toast.LENGTH_SHORT).show();
 	    	Log.e("BatteryActivity", mCount + "");
-			if (mCount < 5000) {
+			if (mCount < 50000) {
 				mTask = new FaceDetectionTask();
 				mTask.execute("");
 			}
