@@ -1,0 +1,14 @@
+<resources>
+    <string name="intent_should_offload">
+        com.networks.ucla.CodeOffloadingEngine.offload</string>
+    <string name="intent_decision">
+        com.networks.ucla.facedetection.offloadDecision</string>
+    <string name="intent_offload_complete">
+        com.networks.ucla.facedetection.responseAfterOffloadComplete</string>
+    <string name="intent_perform_offload">
+        com.networks.ucla.CodeOffloadingEngine.do_offload</string>
+    <string name="intent_log_to_memory">
+        com.networks.ucla.CodeOffloadingEngine.log_to_memory</string>
+    <string name="intent_face_detect_stop">
+        com.networks.ucla.FACEDETECT_STOP</string>
+</resources>
